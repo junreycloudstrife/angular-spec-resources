@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-reusable',
@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./reusable.component.css']
 })
 export class ReusableComponent implements OnInit {
+  @Input() name = '';
 
   constructor() { }
 
