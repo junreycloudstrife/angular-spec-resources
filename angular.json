@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "angular-spec-resources"
+    }
+  },
+  "defaultProject": "angular-spec-resources",
+  "cli": {
+    "analytics": false
+  }
 }
