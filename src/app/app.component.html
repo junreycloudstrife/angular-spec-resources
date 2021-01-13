@@ -1,5 +1,9 @@
 <h1>{{title}}</h1>
 
-<div *ngFor="let name of names">
+<!-- <div *ngFor="let name of names">
   <app-reusable [name]="name"></app-reusable>
+</div> -->
+
+<div *ngFor="let person of persons">
+  <app-reusable [person]="person"></app-reusable>
 </div>
