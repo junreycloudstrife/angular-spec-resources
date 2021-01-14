@@ -1,0 +1,26 @@
+<form [formGroup]="userForm" (ngSubmit)="test(userForm.value)">
+    <div>
+        <label for="firstName">First Name</label>
+        <input formControlName="firstName" type="text">    
+    </div>
+    <div>
+        <label for="lastName">Last Name</label>
+        <input formControlName="lastName" type="text">    
+    </div>
+    <div>
+        <label for="age">Age</label>
+        <input formControlName="age" type="text">    
+    </div>
+    <div formGroupName="address">
+        <div>
+            <label for="barangay">Barangay</label>
+            <input formControlName="barangay" type="text">    
+        </div>        
+        <div>
+            <label for="municipality">Municipality</label>
+            <input formControlName="municipality" type="text">    
+        </div>
+        </div>
+    <br><br>
+    <button type="submit">Add User</button>
+</form>
