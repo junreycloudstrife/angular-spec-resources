@@ -6,10 +6,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./template.component.css']
 })
 export class TemplateComponent implements OnInit {
+  username;
+  password;
 
   constructor() { }
 
   ngOnInit(): void {
   }
 
+  test(data: any){
+    console.log(data);
+  }
 }
