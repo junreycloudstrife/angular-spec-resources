@@ -7,7 +7,7 @@ import { Person } from './models';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Directives';
+  title = 'Angular Routing';
   names = ['Juan', 'Jose', 'Pedro'];
   persons:Person[] = [
     { firstName: 'Juan', lastName: 'Luna', age: 30 },
