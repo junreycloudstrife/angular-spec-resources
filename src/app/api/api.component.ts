@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { ApiService } from '../api.service';
 
 @Component({
   selector: 'app-api',
@@ -12,20 +12,15 @@ export class ApiComponent implements OnInit {
 
   posts: Post[];
 
-  constructor(private http: HttpClient) { }
+  constructor(
+    private apiService: ApiService
+    ) { }
 
   ngOnInit(): void {
-    console.log('onInit');
-    this.getPosts().subscribe(posts => {
-      console.log(posts);
-      this.posts = posts as Post[];
+    this.apiService.getData(this.url).subscribe(data => {
+      console.log(data);
     })
   }
-
-  getPosts(){
-    return this.http.get(this.url);
-  }
-
 }
 
 
