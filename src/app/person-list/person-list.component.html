@@ -1,0 +1,9 @@
+<h2>{{title}}</h2>
+
+<div *ngFor="let person of persons">
+    <app-reusable 
+        [person]="person"
+    ></app-reusable>
+</div>
+<br><br><br>
+<button (click)="viewAddPersonForm()">Add Person</button>    

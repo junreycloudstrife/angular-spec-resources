@@ -1,0 +1,29 @@
+<h2>{{title}}</h2>
+
+<form #addForm="ngForm" (ngSubmit)="addPerson(addForm.value)">
+    <div>
+        <label for="firstName">First Name: </label>
+        <input [ngModel]="firstName" type="text" name="firstName" id="firstName">
+    </div><br>
+    <div>
+        <label for="lastName">Last Name: </label>
+        <input [ngModel]="lastName" type="text" name="lastName" id="lastName">
+    </div><br>
+    <div>
+        <label for="age">Age: </label>
+        <input [ngModel]="age" type="number" name="age" id="age">
+    </div><br>
+    <div>
+        <label for="nationality">Nationality: </label>
+        <input [ngModel]="nationality" type="text" name="nationality" id="nationality">
+    </div><br>
+    <div>
+        <label for="gender">Gender: </label>
+        <select [ngModel]="gender" name="gender" id="gender">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+        </select>
+    </div><br><br>
+    <button type="submit">Add Person</button>
+    <button type="button" (click)="viewPersonList()">Cancel</button>
+</form>

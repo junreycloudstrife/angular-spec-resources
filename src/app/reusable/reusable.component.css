@@ -1,0 +1,13 @@
+.main-con {
+    display: flex;
+    flex-direction: column;
+}
+
+h3 {
+    background-color: chartreuse;
+    width: 50%;
+}
+ul {
+    background-color: burlywood;
+}
+

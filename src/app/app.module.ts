@@ -9,6 +9,9 @@ import { ReusableComponent } from './reusable/reusable.component';
 import { TemplateComponent } from './template/template.component';
 import { ReactiveComponent } from './reactive/reactive.component';
 import { ApiComponent } from './api/api.component';
+import { AddPersonComponent } from './add-person/add-person.component';
+import { UpdatePersonComponent } from './update-person/update-person.component';
+import { PersonListComponent } from './person-list/person-list.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +20,9 @@ import { ApiComponent } from './api/api.component';
     TemplateComponent,
     ReactiveComponent,
     ApiComponent,
+    AddPersonComponent,
+    UpdatePersonComponent,
+    PersonListComponent,
   ],
   imports: [
     BrowserModule,

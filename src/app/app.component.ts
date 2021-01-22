@@ -8,10 +8,10 @@ import { Person } from './models';
 })
 export class AppComponent {
   title = 'Angular Routing';
-  names = ['Juan', 'Jose', 'Pedro'];
-  persons:Person[] = [
-    { firstName: 'Juan', lastName: 'Luna', age: 30 },
-    { firstName: 'Jose', lastName: 'Rizal', age: 35 },
-    { firstName: 'Pedro', lastName: 'Penduko', age: 25}
-  ]
+  // names = ['Juan', 'Jose', 'Pedro'];
+  // persons:Person[] = [
+  //   { firstName: 'Juan', lastName: 'Luna', age: 30 },
+  //   { firstName: 'Jose', lastName: 'Rizal', age: 35 },
+  //   { firstName: 'Pedro', lastName: 'Penduko', age: 25}
+  // ]
 }

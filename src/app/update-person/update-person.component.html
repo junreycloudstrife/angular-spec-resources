@@ -1,0 +1,26 @@
+<h2>{{title}}</h2>
+
+<form [formGroup]="personForm" (ngSubmit)="updatePerson(personForm.value)">
+    <div>
+        <label for="firstName">First Name: </label>
+        <input formControlName="firstName" type="text">
+    </div><br>
+    <div>
+        <label for="lastName">Last Name: </label>
+        <input formControlName="lastName" type="text">
+    </div><br>
+    <div>
+        <label for="age">Age: </label>
+        <input formControlName="age" type="text">
+    </div><br>
+    <div>
+        <label for="nationality">Nationality: </label>
+        <input formControlName="nationality" type="text">
+    </div><br>
+    <div>
+        <label for="gender">Gender: </label>
+        <input formControlName="gender" type="text">
+    </div><br><br>
+    <button type="submit">Update</button>
+    <button type="button"  (click)="cancelUpdatePerson()">Cancel</button>
+</form>

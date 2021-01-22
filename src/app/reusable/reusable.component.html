@@ -1,2 +1,11 @@
-<!-- <p>{{name}}</p> -->
-<p>{{person.firstName}}, {{person.lastName}}, {{person.age}}</p>
+<div class="main-con"></div>
+<h3 (click)="showHide()">{{person.firstName}} {{person.lastName}}</h3>
+<button (click)="viewUpdatePersonForm(person)">Update</button>
+<button (click)="deletePerson(person)">Delete</button>
+<div [hidden]="hidden">
+    <ul>First Name: {{person.firstName}}</ul>
+    <ul>Last Name: {{person.lastName}}</ul>
+    <ul>Age: {{person.age}}</ul>
+    <ul *ngIf="person.nationality">Nationality: {{person.nationality}}</ul>
+    <ul>Gender: {{person.gender}}</ul>
+</div>
