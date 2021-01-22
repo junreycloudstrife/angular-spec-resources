@@ -1,5 +1,6 @@
 {
   "projects": {
-    "default": "angular-spec-resources"
+    "default": "angular-spec-resources",
+    "angular-spec-resources": "angular-spec-specialization"
   }
 }
