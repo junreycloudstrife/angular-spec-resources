@@ -12,6 +12,9 @@ import { ApiComponent } from './api/api.component';
 import { AddPersonComponent } from './add-person/add-person.component';
 import { UpdatePersonComponent } from './update-person/update-person.component';
 import { PersonListComponent } from './person-list/person-list.component';
+import { FirstChildComponent } from './person-list/first-child.component';
+import { SecondChildComponent } from './person-list/second-child.component';
+import { ThirdChildComponent } from './person-list/third-child.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +26,9 @@ import { PersonListComponent } from './person-list/person-list.component';
     AddPersonComponent,
     UpdatePersonComponent,
     PersonListComponent,
+    FirstChildComponent,
+    SecondChildComponent,
+    ThirdChildComponent,
   ],
   imports: [
     BrowserModule,
